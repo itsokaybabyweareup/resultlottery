@@ -4,4 +4,7 @@ const date = () => {
     return today;
 }
 
-document.getElementById('dyn-date').textContent = date();
+const dateElements = document.getElementsByClassName('dyn-date');
+for (let i = 0; i < dateElements.length; i++) {
+    dateElements[i].textContent = date();
+}
